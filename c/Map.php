@@ -28,12 +28,12 @@
 error_reporting(0);
 $korrdat = $_GET[BN];
 error_reporting(I_ALL);
-$Host="launchzone.de";
-$User="jh";
-$Tabelle="jugendhackt_1";
-$PW="haschtag";
+$Host="";
+$User="";
+$Tabelle="";
+$PW="";
 
-$verbindung = mysql_connect($Host,$User,$PW)or die ("keine Verbindung möglich.
+$verbindung = mysql_connect($Host,$User,$PW)or die ("keine Verbindung mï¿½glich.
  Benutzername oder Passwort sind falsch");
 mysql_select_db($Tabelle) or die ("Die Datenbank existiert nicht.");
 $counter=1;
