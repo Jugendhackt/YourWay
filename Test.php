@@ -7,13 +7,13 @@
 $Host="launchzone.de";
 $User="jh";
 $Tabelle="jugendhackt_1";
-$PW="haschtag";
+$PW="passwort";
 
 
 error_reporting(0);
 $korrdat = $_POST[korrdat];
 error_reporting(E_ALL);
-$verbindung = mysql_connect($Host,$User,$PW)or die("keine Verbindung möglich. Benutzername oder Passwort sind falsch");
+$verbindung = mysql_connect($Host,$User,$PW)or die("keine Verbindung mï¿½glich. Benutzername oder Passwort sind falsch");
 mysql_select_db($Tabelle) or die("Die Datenbank existiert nicht.");
 
 $abfrage = "SELECT * FROM hochschulen WHERE bundesland like '".$korrdat."'";
